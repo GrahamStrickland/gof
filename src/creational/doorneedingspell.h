@@ -7,10 +7,10 @@ class EnchantedRoom;
 
 class DoorNeedingSpell : public Door {
 public:
-    DoorNeedingSpell(EnchantedRoom* r1, EnchantedRoom* r2);
+  DoorNeedingSpell(EnchantedRoom *r1, EnchantedRoom *r2);
 
 private:
-    EnchantedRoom* _r1;
-    EnchantedRoom* _r2;
+  EnchantedRoom *_r1;
+  EnchantedRoom *_r2;
 };
 #endif // DOOR_NEEDING_SPELL_H

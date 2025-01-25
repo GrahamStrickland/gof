@@ -4,11 +4,10 @@
 #include "mazegame.h"
 
 int main(int argc, char *argv[]) {
-    MazeGame game;
-    BombedMazeFactory factory;
+  MazeGame game;
+  BombedMazeFactory factory;
 
-    game.CreateMaze(factory);
+  game.CreateMaze(factory);
 
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
-

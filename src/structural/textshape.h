@@ -7,15 +7,13 @@ class TextView;
 
 class TextShape : public Shape {
 public:
-    TextShape(TextView*);
+  TextShape(TextView *);
 
-    virtual void BoundingBox(
-        Point& bottomLeft, Point& topRight
-    ) const;
-    virtual bool IsEmpty() const;
-    virtual Manipulator* CreateManipulator() const;
+  virtual void BoundingBox(Point &bottomLeft, Point &topRight) const;
+  virtual bool IsEmpty() const;
+  virtual Manipulator *CreateManipulator() const;
+
 private:
-    TextView* _text;
+  TextView *_text;
 };
 #endif // TEXT_SHAPE_H
-

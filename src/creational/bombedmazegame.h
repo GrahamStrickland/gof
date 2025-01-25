@@ -8,13 +8,10 @@ class Wall;
 
 class BombedMazeGame : public MazeGame {
 public:
-    BombedMazeGame();
+  BombedMazeGame();
 
-    virtual Wall* MakeWall() const
-        { return new BombedWall; }
+  virtual Wall *MakeWall() const { return new BombedWall; }
 
-    virtual Room* MakeRoom(int n) const
-        { return new RoomWithABomb(n); } 
+  virtual Room *MakeRoom(int n) const { return new RoomWithABomb(n); }
 };
 #endif // BOMBED_MAZE_GAME_H
-

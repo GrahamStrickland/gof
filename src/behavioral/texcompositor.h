@@ -5,12 +5,10 @@
 
 class TeXCompositor : public Compositor {
 public:
-    TeXCompositor();
+  TeXCompositor();
 
-    virutal int Compose(
-        Coord natural[], Coord stretch[], Coord shrink[],
-        int componentCount, int lineWidth, int breaks[]
-    );
-    // ...
+  virutal int Compose(Coord natural[], Coord stretch[], Coord shrink[],
+                      int componentCount, int lineWidth, int breaks[]);
+  // ...
 };
 #endif // TEX_COMPOSITOR_H

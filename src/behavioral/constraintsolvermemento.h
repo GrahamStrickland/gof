@@ -3,12 +3,12 @@
 
 class ConstraintSolverMemento {
 public:
-    virtual ~ConstraintSolverMemento();
-private:
-    friend class ConstraintSolver;
-    ConstraintSolverMemento();
+  virtual ~ConstraintSolverMemento();
 
-    // private constraint solver state
+private:
+  friend class ConstraintSolver;
+  ConstraintSolverMemento();
+
+  // private constraint solver state
 };
 #endif // CONSTRAINT_SOLVER_MEMENTO_H
-

@@ -9,15 +9,14 @@ const int NCHARCODES = 128;
 
 class GlyphFactory {
 public:
-    GlyphFactory();
-    virtual ~GlyphFactory();
+  GlyphFactory();
+  virtual ~GlyphFactory();
 
-    virtual Character* CreateCharacter(char);
-    virtual Row* CreateRow();
-    virtual Column* CreateColumn();
-    // ...
+  virtual Character *CreateCharacter(char);
+  virtual Row *CreateRow();
+  virtual Column *CreateColumn();
+  // ...
 private:
-    Character* _character{NCHARCODES};
+  Character *_character{NCHARCODES};
 };
 #endif // GLYPH_FACTORY_H
-

@@ -7,12 +7,12 @@
 
 class MyStrategy {
 public:
-    void DoAlgorithm();
+  void DoAlgorithm();
 };
 
 int main(int argc, char *argv[]) {
-    Context<MyStrategy> aContext;
+  Context<MyStrategy> aContext;
 
-    return EXIT_SUCCESS;
+  return EXIT_SUCCESS;
 }
 #endif // MY_STRATEGY_H

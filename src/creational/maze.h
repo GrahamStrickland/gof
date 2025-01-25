@@ -5,12 +5,12 @@ class Room;
 
 class Maze {
 public:
-    Maze();
+  Maze();
 
-    void AddRoom(Room*);
-    Room* RoomNo(int) const;
+  void AddRoom(Room *);
+  Room *RoomNo(int) const;
 
 private:
-    // ...
+  // ...
 };
 #endif // MAZE_H

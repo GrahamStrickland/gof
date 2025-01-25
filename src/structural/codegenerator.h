@@ -7,13 +7,13 @@ class StatementNode;
 
 class CodeGenerator {
 public:
-    virtual void Visit(StatementNode*);
-    virtual void Visit(ExpressionNode*);
-    // ...
+  virtual void Visit(StatementNode *);
+  virtual void Visit(ExpressionNode *);
+  // ...
 protected:
-    CodeGenerator(BytecodeStream&);
+  CodeGenerator(BytecodeStream &);
+
 private:
-    BytecodeStream& _output;
+  BytecodeStream &_output;
 };
 #endif // CODE_GENERATOR_H
-

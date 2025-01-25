@@ -5,12 +5,10 @@
 
 class SimpleCompositor : public Compositor {
 public:
-    SimpleCompositor();
+  SimpleCompositor();
 
-    virtual int Compose(
-        Coord natural[], Coord stretch[], Coord shrink[],
-        int componentCount, int lineWidth, int breaks[]
-    );
-    // ...
+  virtual int Compose(Coord natural[], Coord stretch[], Coord shrink[],
+                      int componentCount, int lineWidth, int breaks[]);
+  // ...
 };
 #endif // SIMPLE_COMPOSITOR_H

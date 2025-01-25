@@ -5,8 +5,8 @@
 
 class Wall : public MapSite {
 public:
-    Wall();
+  Wall();
 
-    virtual void Enter();
+  virtual void Enter();
 };
 #endif // WALL_H

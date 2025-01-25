@@ -6,19 +6,19 @@ class State;
 
 class Memento {
 public:
-    // narrow public interface
-    virtual ~Memento();   
-private:
-    // private emembers accessible only to Originator
-    friend class Originator;
-    Memento();
+  // narrow public interface
+  virtual ~Memento();
 
-    void SetState(State*);
-    State* GetState();
-    // ...
 private:
-    State* _state;
-    // ...
+  // private emembers accessible only to Originator
+  friend class Originator;
+  Memento();
+
+  void SetState(State *);
+  State *GetState();
+  // ...
+private:
+  State *_state;
+  // ...
 };
 #endif // MEMENTO_H
-

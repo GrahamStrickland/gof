@@ -8,10 +8,9 @@ class Room;
 
 class BombedMazeFactory : public MazeFactory {
 public:
-    BombedMazeFactory();
+  BombedMazeFactory();
 
-    Wall* MakeWall() const;
-    Room* MakeRoom(int n) const;
+  Wall *MakeWall() const;
+  Room *MakeRoom(int n) const;
 };
 #endif // BOMBED_MAZE_FACTORY_Y
-

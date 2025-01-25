@@ -7,12 +7,12 @@ class Token;
 
 class Scanner {
 public:
-    Scanner(std::istream&);
-    virtual ~Scanner();
+  Scanner(std::istream &);
+  virtual ~Scanner();
 
-    virtual Token& Scan();
+  virtual Token &Scan();
+
 private:
-    std::istream& _inputStream;
+  std::istream &_inputStream;
 };
 #endif // SCANNER_H
-

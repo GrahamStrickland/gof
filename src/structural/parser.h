@@ -6,10 +6,9 @@ class Scanner;
 
 class Parser {
 public:
-    Parser();
-    virtual ~Parser();
+  Parser();
+  virtual ~Parser();
 
-    virtual void Parse(Scanner&, ProgramNodeBuilder&);
+  virtual void Parse(Scanner &, ProgramNodeBuilder &);
 };
 #endif // PARSER_H
-

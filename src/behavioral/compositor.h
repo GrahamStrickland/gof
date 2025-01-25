@@ -5,11 +5,10 @@
 
 class Compositor {
 public:
-    virtual int Compose(
-        Coord natural[], Coord stretch[], Coord shrink[],
-        int componentCount, int lineWidth, int breaks[]
-    ) = 0;
+  virtual int Compose(Coord natural[], Coord stretch[], Coord shrink[],
+                      int componentCount, int lineWidth, int breaks[]) = 0;
+
 protected:
-    Compositor();
+  Compositor();
 };
 #endif // COMPOSITOR_H

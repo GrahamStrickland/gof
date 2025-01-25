@@ -5,11 +5,12 @@ class Product;
 
 class Creator {
 public:
-    virtual Product* GetProduct();
+  virtual Product *GetProduct();
+
 protected:
-    virtual Product* CreateProduct();
+  virtual Product *CreateProduct();
+
 private:
-    Product* _product;
+  Product *_product;
 };
 #endif // CREATOR_H
-

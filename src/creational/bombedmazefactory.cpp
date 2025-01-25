@@ -4,11 +4,6 @@
 #include "roomwithabomb.h"
 #include "wall.h"
 
-Wall* BombedMazeFactory::MakeWall() const {
-    return new BombedWall;
-}
+Wall *BombedMazeFactory::MakeWall() const { return new BombedWall; }
 
-Room* BombedMazeFactory::MakeRoom(int n) const {
-    return new RoomWithABomb(n);
-}
-
+Room *BombedMazeFactory::MakeRoom(int n) const { return new RoomWithABomb(n); }

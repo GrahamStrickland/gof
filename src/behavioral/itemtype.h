@@ -8,8 +8,7 @@
 
 class ItemType {
 public:
-    void Process();
-    // ...
+  void Process();
+  // ...
 }
 #endif // ITEM_TYPE_H
-

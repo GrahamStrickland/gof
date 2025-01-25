@@ -7,9 +7,8 @@ class BytecodeStream;
 
 class Compiler {
 public:
-    Compiler();
+  Compiler();
 
-    virtual void Compile(std::istream&, BytecodeStream&);
+  virtual void Compile(std::istream &, BytecodeStream &);
 };
 #endif // COMPILER_H
-

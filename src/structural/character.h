@@ -5,11 +5,11 @@
 
 class Character : public Glyph {
 public:
-    Character(char);
+  Character(char);
 
-    virtual void Draw(Window*, GlyphContext&);
+  virtual void Draw(Window *, GlyphContext &);
+
 private:
-    char _charcode;
+  char _charcode;
 };
 #endif // CHARACTER_H
-

@@ -9,16 +9,17 @@ class Spell;
 
 class EnchantedMazeGame : public MazeGame {
 public:
-    EnchantedMazeGame();
+  EnchantedMazeGame();
 
-    virtual Room* MakeRoom(int n) const
-        { return new EnchantedRoom(n, CastSpell()); }
+  virtual Room *MakeRoom(int n) const {
+    return new EnchantedRoom(n, CastSpell());
+  }
 
-    virtual Door* Makedoor(Room* r1, Room* r2) const
-        { return new DoorNeedingSpell(r1, r2); }
+  virtual Door *Makedoor(Room *r1, Room *r2) const {
+    return new DoorNeedingSpell(r1, r2);
+  }
 
 protected:
-    Spell* CastSpell() const;
+  Spell *CastSpell() const;
 };
 #endif // ENCHANTED_MAZE_GAME_H
-

@@ -6,12 +6,11 @@ class State;
 
 class Originator {
 public:
-    Memento* CreateMemento();
-    void SetMemento(cosnt Memento*);
-    // ...
+  Memento *CreateMemento();
+  void SetMemento(cosnt Memento *);
+  // ...
 private:
-    State* _state;      // internal data structures
-    // ...
+  State *_state; // internal data structures
+                 // ...
 };
 #endif // ORIGINATOR_H
-
